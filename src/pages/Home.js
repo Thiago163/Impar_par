@@ -11,8 +11,6 @@ let [total, setTotal] = useState();
 
 function CalcularTotal(){
 
-    let resultado = valor1;
-
     if(valor1 % 2 === 0) {
         alert("O número é par");
     } else {
@@ -24,7 +22,7 @@ function CalcularTotal(){
         <View style={styles.container}>
             <Text style={styles.titulo}>Projeto Nascimento</Text>
 
-            <TextInput onChangeText={setValor1} style={styles.campo} placeholder="Digite seu ano de nascimento"/>
+            <TextInput onChangeText={setValor1} style={styles.campo} placeholder="Digite o número"/>
            
             <TouchableOpacity style={styles.botao} onPress={CalcularTotal}>
                 <Text style={styles.botaoTexto}>Calcular</Text>
