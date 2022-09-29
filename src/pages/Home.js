@@ -7,7 +7,6 @@ export default function Home(){
     
 
 let [valor1, setValor1] = useState();
-let [total, setTotal] = useState();
 
 function CalcularTotal(){
 
@@ -20,7 +19,7 @@ function CalcularTotal(){
     
     return(
         <View style={styles.container}>
-            <Text style={styles.titulo}>Projeto Nascimento</Text>
+            <Text style={styles.titulo}>Projeto Impar Par</Text>
 
             <TextInput onChangeText={setValor1} style={styles.campo} placeholder="Digite o número"/>
            
